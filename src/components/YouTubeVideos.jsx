@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './YouTubeVideos.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import YouTube from 'react-youtube';
 
 const YouTubeVideos = () => {
-    const [videos, setVideos] = React.useState([]);
+    const [videos, setVideos] = useState([]);
     const [currentVideo, setCurrentVideo] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const fetchVideos = async () => {
             const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCscSdWvWU0SeKvLRHZRY1hQ&key=AIzaSyBUCP8bKn2aigAGHdahtLT89gecIPgzCcc&type=video&order=date&maxResults=50`);
             const data = await response.json();
@@ -18,13 +20,13 @@ const YouTubeVideos = () => {
 
     const opts = {
         height: '390',
-        width: '640',
+        width: '100%', // Adjusted width for responsiveness
         playerVars: {
             autoplay: 0,
         },
     };
 
-    const handleVideoEnd = (event) => {
+    const handleVideoEnd = () => {
         setCurrentVideo(null);
     };
 

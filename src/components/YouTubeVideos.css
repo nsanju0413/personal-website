@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 30px); /* Adjusted height to accommodate the paragraph element */
 }
 
 .video-item p {
@@ -27,4 +27,15 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjusting to 2 columns on smaller screens */
+    }
+
+    .video-item {
+        height: auto; /* Removing fixed height to adapt to content */
+    }
 }
