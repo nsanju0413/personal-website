@@ -1,0 +1,19 @@
+/* src/DevProfile.css */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Gap between items */
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .video-grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .video-grid-item iframe {
+    width: 100%;
+  }
+  
