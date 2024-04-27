@@ -5,15 +5,30 @@
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 20px; /* Gap between items */
     justify-items: center; /* Center items horizontally */
-  }
-  
-  .video-grid-item {
+}
+
+.video-grid-item {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-  }
-  
-  .video-grid-item iframe {
+}
+
+.video-grid-item iframe {
     width: 100%;
-  }
-  
+}
+
+/* Social links */
+.developer-info {
+    margin-bottom: 20px; /* Add space between developer info and video grid */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center social links horizontally */
+    gap: 10px; /* Add space between social icons */
+}
+
+.social-links a {
+    color: #333; /* Set color for social icons */
+    font-size: 24px; /* Adjust size of social icons */
+}
