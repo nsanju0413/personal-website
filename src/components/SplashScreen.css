@@ -1,0 +1,43 @@
+/* SplashScreen.css */
+.splash-screen {
+    /* Styles for the splash screen container */
+}
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff; /* Adjust color as needed */
+    margin: 0 10px;
+    animation: bounce 1s infinite alternate; /* Example animation */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc; /* Background color for progress bar */
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #007bff; /* Progress color */
+    width: 0; /* Initial width */
+    animation: progress-animation 2s infinite; /* Example animation */
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes progress-animation {
+    0% { width: 0; }
+    100% { width: 100%; }
+}

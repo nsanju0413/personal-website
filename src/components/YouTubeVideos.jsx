@@ -19,7 +19,7 @@ const YouTubeVideos = () => {
     }, []);
 
     const opts = {
-        height: '390',
+        height: '1080',
         width: '100%', // Adjusted width for responsiveness
         playerVars: {
             autoplay: 0,

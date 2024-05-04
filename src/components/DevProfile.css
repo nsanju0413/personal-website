@@ -1,8 +1,15 @@
 /* src/DevProfile.css */
 
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the container */
+}
+
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minimum and maximum width for each column */
     gap: 20px; /* Gap between items */
     justify-items: center; /* Center items horizontally */
 }
@@ -25,10 +32,22 @@
 .social-links {
     display: flex;
     justify-content: center; /* Center social links horizontally */
-    gap: 10px; /* Add space between social icons */
+    gap: 20px; /* Add space between social icons */
 }
 
 .social-links a {
-    color: #333; /* Set color for social icons */
+    color: #FFFF; /* Set color for social icons */
     font-size: 24px; /* Adjust size of social icons */
 }
+/* src/DevProfile.css */
+
+.git-profile-container {
+    display: flex;
+
+    justify-content: center; /* Center items horizontally */
+}
+
+.git-profile-container img {
+    width: 100%; /* Ensure images take full width of their container */
+}
+

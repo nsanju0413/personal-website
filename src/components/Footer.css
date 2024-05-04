@@ -1,0 +1,11 @@
+/* Footer.css */
+.footer {
+    /* Your existing styles for the footer */
+}
+
+/* Styling for the copyright text */
+.footer .copyright {
+    font-family: Arial, sans-serif; /* Specify the desired font-family */
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #FFFF; /* Set the text color */
+}
