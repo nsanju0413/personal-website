@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import DevProfile from './components/DevProfile';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import SplashScreen from './components/SplashScreen'; // Import SplashScreen component
 
@@ -27,7 +28,8 @@ function App() {
                 {/* Conditionally render SplashScreen while isLoading is true */}
                 {isLoading ? <SplashScreen /> : (
                     <>
-                        {/* Render DevProfile component when isLoading is false */}
+                      <NavBar/>
+                      
                         <DevProfile apiKey={apiKey} channelId={channelId} />
                         <Footer />
                     </>
